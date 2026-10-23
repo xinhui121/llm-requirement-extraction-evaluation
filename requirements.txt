@@ -1,0 +1,2 @@
+# Python standard library only: no third-party runtime packages are required.
+# JSON Schema validation is implemented locally for the subset used here.

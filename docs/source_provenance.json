@@ -1,0 +1,228 @@
+{
+  "description": "Paths are relative to the private experiment root, without private absolute paths. Copied metrics and prompt/schema bytes are unchanged. Selected function bodies are unchanged.",
+  "artifacts": [
+    {
+      "public_path": "src/metrics.py",
+      "source_path": "scripts/run_llm_eval.py",
+      "source_sha256": "0b1038e64546fd0d5130a93153b03008af567032c0b055d768d7da609bf5e46a",
+      "public_sha256": "98301dc3b082a0979907ede20797ebf3e46649a63e8c388ba9bc801b06c2147d",
+      "transformation": "Selected original top-level definitions copied verbatim; imports and module documentation adjusted; no scoring/API function body changes.",
+      "definitions": [
+        "LABELS",
+        "ACTIONABLE",
+        "RTW_FIELDS",
+        "RTW_WORDING_FIELDS",
+        "ERROR_TAXONOMY",
+        "read_json",
+        "read_jsonl",
+        "sha256_file",
+        "safe_div",
+        "score",
+        "_range",
+        "ranges_compatible",
+        "_normalized_wording",
+        "_rtw_field_equal",
+        "_requirement_is_stated",
+        "_REQUIREMENT_LEVEL_RANK",
+        "_SENIORITY_RANK",
+        "_UNSTATED_VALUES",
+        "critical_field_omissions",
+        "unsupported_categorical_inferences",
+        "_work_authorization_hard_blocker",
+        "extraction_rtw_blocker",
+        "gold_hard",
+        "_skill_item_differences",
+        "structured_field_differences",
+        "differing_fields",
+        "error_categories",
+        "calculate_metrics",
+        "load_predictions"
+      ]
+    },
+    {
+      "public_path": "src/responses_client.py",
+      "source_path": "scripts/openai_responses_smoke_v1.py",
+      "source_sha256": "3bd3d04151395d69c4a7a111008cbdbb35203cdfe5d84e1052a63b06cf9269e4",
+      "public_sha256": "fca6fb5e1010dfbad4c42d7583b3c0d3e1676233ebc20ce4c4da685612618e41",
+      "transformation": "Selected original top-level definitions copied verbatim; imports and module documentation adjusted; no scoring/API function body changes.",
+      "definitions": [
+        "OpenAIResponsesAPIError",
+        "_extract_output_text",
+        "_contains_tool_output",
+        "build_model_input",
+        "build_request_payload",
+        "non_sensitive_request_configuration",
+        "_safe_http_error_diagnostic",
+        "_post_openai_response"
+      ]
+    },
+    {
+      "public_path": "src/schema_validation.py",
+      "source_path": "scripts/schema_validation.py",
+      "source_sha256": "69f874795e2bc0511b7f43922b64e0bc9d75f01058884291c6e82a823b0daf36",
+      "public_sha256": "38a9f666e193b162416ead2ff9798622bfa8b4a786a4bf34efefdf04f07330e6",
+      "transformation": "Original validator with one trailing blank line removed for the Git whitespace check; function bodies and evaluation logic unchanged."
+    },
+    {
+      "public_path": "src/structured_output_schema_compat.py",
+      "source_path": "scripts/structured_output_schema_compat.py",
+      "source_sha256": "aa1b4af712ee5a50f2041f2e33399b9b7a7f9714eb6fc78c80012a9c5f996a8e",
+      "public_sha256": "aa1b4af712ee5a50f2041f2e33399b9b7a7f9714eb6fc78c80012a9c5f996a8e",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "prompts/v1.txt",
+      "source_path": "prompts/v1.txt",
+      "source_sha256": "90b4133614bbaa56f98970d3e314afe571b01add00245c8bec54cc560706def1",
+      "public_sha256": "90b4133614bbaa56f98970d3e314afe571b01add00245c8bec54cc560706def1",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "prompts/v2.txt",
+      "source_path": "prompts/v2.txt",
+      "source_sha256": "084b428878849ae8cd02657f9915078c821b1c4e636810f0ec037b9f94b56b22",
+      "public_sha256": "084b428878849ae8cd02657f9915078c821b1c4e636810f0ec037b9f94b56b22",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "schemas/llm_output.schema.json",
+      "source_path": "schemas/llm_output.schema.json",
+      "source_sha256": "492c8d4a1c6c38fdc5fa210a2592548c5016967523f3bf722aad2c4b520e9212",
+      "public_sha256": "492c8d4a1c6c38fdc5fa210a2592548c5016967523f3bf722aad2c4b520e9212",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "schemas/annotation.schema.json",
+      "source_path": "schemas/annotation.schema.json",
+      "source_sha256": "f2723948057cc832181657de132a8ccffb7253fb6b6c6e266a3c58ca7559b882",
+      "public_sha256": "f2723948057cc832181657de132a8ccffb7253fb6b6c6e266a3c58ca7559b882",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "schemas/human_annotation_workflow.schema.json",
+      "source_path": "schemas/human_annotation_workflow.schema.json",
+      "source_sha256": "d0cad0c8c236b3cc4065cd459d198fcc4b06f1239002328bc1f3ddb4b1d59117",
+      "public_sha256": "d0cad0c8c236b3cc4065cd459d198fcc4b06f1239002328bc1f3ddb4b1d59117",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "config/evaluation_split_pilot25_v1.json",
+      "source_path": "data/evaluation_split_pilot25_v1.json",
+      "source_sha256": "a0c9b1dd7412920d650420d4d6787344bbd44209182a3f9f41abe191ebf40ff6",
+      "public_sha256": "a0c9b1dd7412920d650420d4d6787344bbd44209182a3f9f41abe191ebf40ff6",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "config/recorded/prompt_v1.json",
+      "source_path": "config/eval_config_pilot25_openai_v1.json",
+      "source_sha256": "67337553595180ba147eb6edb253a59a297480b1d5b5226b2fccb87c1dbdf766",
+      "public_sha256": "67337553595180ba147eb6edb253a59a297480b1d5b5226b2fccb87c1dbdf766",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "results/prompt_v1/metrics_development.json",
+      "source_path": "runs/prompt-v1-pilot25-20260919T045221Z-fe28f2d2/metrics_development.json",
+      "source_sha256": "7ab6c951ed756c53de13876a7884aed218450d91f2762eb2a72472fc9427fdc6",
+      "public_sha256": "7ab6c951ed756c53de13876a7884aed218450d91f2762eb2a72472fc9427fdc6",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "results/prompt_v1/metrics_holdout.json",
+      "source_path": "runs/prompt-v1-pilot25-20260919T045221Z-fe28f2d2/metrics_holdout.json",
+      "source_sha256": "1027b38c2f3632351de55b962f1155b05da4efb3d311918936aa0b2fd603d27a",
+      "public_sha256": "1027b38c2f3632351de55b962f1155b05da4efb3d311918936aa0b2fd603d27a",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "results/prompt_v1/metrics_all.json",
+      "source_path": "runs/prompt-v1-pilot25-20260919T045221Z-fe28f2d2/metrics_all.json",
+      "source_sha256": "5e70d90d809f10e35b1cdd3bf972ac5a508509f2f39787d931ab578a6beb03d2",
+      "public_sha256": "5e70d90d809f10e35b1cdd3bf972ac5a508509f2f39787d931ab578a6beb03d2",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "config/recorded/prompt_v2.json",
+      "source_path": "config/eval_config_pilot25_openai_v2.json",
+      "source_sha256": "8058d7476c606930327f155f5a3b901e04c249e213cd4414d24f3939873f2189",
+      "public_sha256": "8058d7476c606930327f155f5a3b901e04c249e213cd4414d24f3939873f2189",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "results/prompt_v2/metrics_development.json",
+      "source_path": "runs/prompt-v2-pilot25-20260919T052427Z-c9da93e1/metrics_development.json",
+      "source_sha256": "05408c726edfe96b405823007968e4955002cd5be7de7fc25760e5bdab69e85b",
+      "public_sha256": "05408c726edfe96b405823007968e4955002cd5be7de7fc25760e5bdab69e85b",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "results/prompt_v2/metrics_holdout.json",
+      "source_path": "runs/prompt-v2-pilot25-20260919T052427Z-c9da93e1/metrics_holdout.json",
+      "source_sha256": "3f8a2bd81d245ad104784d485a2a4f30ef061f1c1229280bb6ff91b3f0683e44",
+      "public_sha256": "3f8a2bd81d245ad104784d485a2a4f30ef061f1c1229280bb6ff91b3f0683e44",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "results/prompt_v2/metrics_all.json",
+      "source_path": "runs/prompt-v2-pilot25-20260919T052427Z-c9da93e1/metrics_all.json",
+      "source_sha256": "ffe269e2d96abded75e58f1fd2e96b7f5b08fc20b16aa82dc6da7888478ad9d2",
+      "public_sha256": "ffe269e2d96abded75e58f1fd2e96b7f5b08fc20b16aa82dc6da7888478ad9d2",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "results/development_v1_v2_metric_comparison.json",
+      "source_path": "runs/prompt-v2-pilot25-20260919T052427Z-c9da93e1/development_v1_v2_metric_comparison.json",
+      "source_sha256": "e609be59463e76b189f35f4320685fa7ec97f6d27a277bd5f9a145f8cf513192",
+      "public_sha256": "e609be59463e76b189f35f4320685fa7ec97f6d27a277bd5f9a145f8cf513192",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "results/holdout_v1_v2_metric_comparison.json",
+      "source_path": "runs/prompt-v2-pilot25-20260919T052427Z-c9da93e1/holdout_v1_v2_metric_comparison.json",
+      "source_sha256": "b6e199823169418dce9e3171294530c563e72aef488cffc83134b21f71718a4d",
+      "public_sha256": "b6e199823169418dce9e3171294530c563e72aef488cffc83134b21f71718a4d",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "results/development_case_comparison_summary.json",
+      "source_path": "runs/prompt-v2-pilot25-20260919T052427Z-c9da93e1/development_case_comparison_summary.json",
+      "source_sha256": "73fdc2f53c886c943b9da5ad6d623041bd7a57d66f9d6646aa0212148f2cc64e",
+      "public_sha256": "73fdc2f53c886c943b9da5ad6d623041bd7a57d66f9d6646aa0212148f2cc64e",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "results/oracle/metrics_development.json",
+      "source_path": "runs/oracle-gate-audit-pilot25-v1-20260919T051021Z-790a032d/oracle_metrics_development.json",
+      "source_sha256": "ffd9d4f9bfe17cdece9acb7cd07da6a9e32a3aabb77b436096ac62cfb064a851",
+      "public_sha256": "ffd9d4f9bfe17cdece9acb7cd07da6a9e32a3aabb77b436096ac62cfb064a851",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "results/oracle/metrics_holdout.json",
+      "source_path": "runs/oracle-gate-audit-pilot25-v1-20260919T051021Z-790a032d/oracle_metrics_holdout.json",
+      "source_sha256": "9522d21d60892275d735eca3ad6663441cf2ed29471bb3363ea9ee94d755372b",
+      "public_sha256": "9522d21d60892275d735eca3ad6663441cf2ed29471bb3363ea9ee94d755372b",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "results/oracle/metrics_all.json",
+      "source_path": "runs/oracle-gate-audit-pilot25-v1-20260919T051021Z-790a032d/oracle_metrics_all.json",
+      "source_sha256": "b06e6476b5e780b884818c52fdd7965525163de53c8e45208a17e7ad54d1485a",
+      "public_sha256": "b06e6476b5e780b884818c52fdd7965525163de53c8e45208a17e7ad54d1485a",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "docs/prompt_v2_change_plan.md",
+      "source_path": "analysis/prompt_v2_change_plan.md",
+      "source_sha256": "9b6e336a91078ebc3d4e04a826fe919ea591898d941621a71bc02fd9520fa5bf",
+      "public_sha256": "9b6e336a91078ebc3d4e04a826fe919ea591898d941621a71bc02fd9520fa5bf",
+      "transformation": "byte-for-byte copy"
+    },
+    {
+      "public_path": "docs/prompt_v1_to_v2.diff",
+      "source_path": "analysis/prompt_v1_to_v2.diff",
+      "source_sha256": "888b1183b7e6d331d81edf9d89ab85c77ccca8b8bc2b1f6215a0f5da1974d214",
+      "public_sha256": "888b1183b7e6d331d81edf9d89ab85c77ccca8b8bc2b1f6215a0f5da1974d214",
+      "transformation": "byte-for-byte copy"
+    }
+  ]
+}

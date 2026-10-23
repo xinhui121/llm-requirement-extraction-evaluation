@@ -1,0 +1,282 @@
+{
+  "rows": [
+    {
+      "metric": "schema_validity",
+      "v1": {
+        "numerator": 20,
+        "denominator": 20,
+        "rate": 1.0
+      },
+      "v2": {
+        "numerator": 20,
+        "denominator": 20,
+        "rate": 1.0
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "experience_year_exact_match",
+      "v1": {
+        "numerator": 20,
+        "denominator": 20,
+        "rate": 1.0
+      },
+      "v2": {
+        "numerator": 20,
+        "denominator": 20,
+        "rate": 1.0
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "experience_year_compatible_match",
+      "v1": {
+        "numerator": 20,
+        "denominator": 20,
+        "rate": 1.0
+      },
+      "v2": {
+        "numerator": 20,
+        "denominator": 20,
+        "rate": 1.0
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "essential_vs_desirable_accuracy",
+      "v1": {
+        "numerator": 17,
+        "denominator": 20,
+        "rate": 0.85
+      },
+      "v2": {
+        "numerator": 16,
+        "denominator": 20,
+        "rate": 0.8
+      },
+      "delta_rate": -0.04999999999999993
+    },
+    {
+      "metric": "domain_specific_accuracy",
+      "v1": {
+        "numerator": 8,
+        "denominator": 20,
+        "rate": 0.4
+      },
+      "v2": {
+        "numerator": 10,
+        "denominator": 20,
+        "rate": 0.5
+      },
+      "delta_rate": 0.09999999999999998
+    },
+    {
+      "metric": "seniority_accuracy",
+      "v1": {
+        "numerator": 14,
+        "denominator": 20,
+        "rate": 0.7
+      },
+      "v2": {
+        "numerator": 16,
+        "denominator": 20,
+        "rate": 0.8
+      },
+      "delta_rate": 0.10000000000000009
+    },
+    {
+      "metric": "rtw_work_authorization_wording_accuracy",
+      "v1": {
+        "numerator": 16,
+        "denominator": 20,
+        "rate": 0.8
+      },
+      "v2": {
+        "numerator": 16,
+        "denominator": 20,
+        "rate": 0.8
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "rtw_sponsorship_wording_accuracy",
+      "v1": {
+        "numerator": 15,
+        "denominator": 20,
+        "rate": 0.75
+      },
+      "v2": {
+        "numerator": 15,
+        "denominator": 20,
+        "rate": 0.75
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "rtw_sponsorship_status_accuracy",
+      "v1": {
+        "numerator": 19,
+        "denominator": 20,
+        "rate": 0.95
+      },
+      "v2": {
+        "numerator": 19,
+        "denominator": 20,
+        "rate": 0.95
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "rtw_permanent_or_indefinite_rtw_requirement_accuracy",
+      "v1": {
+        "numerator": 20,
+        "denominator": 20,
+        "rate": 1.0
+      },
+      "v2": {
+        "numerator": 20,
+        "denominator": 20,
+        "rate": 1.0
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "rtw_citizenship_accuracy",
+      "v1": {
+        "numerator": 18,
+        "denominator": 20,
+        "rate": 0.9
+      },
+      "v2": {
+        "numerator": 18,
+        "denominator": 20,
+        "rate": 0.9
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "rtw_residency_accuracy",
+      "v1": {
+        "numerator": 17,
+        "denominator": 20,
+        "rate": 0.85
+      },
+      "v2": {
+        "numerator": 17,
+        "denominator": 20,
+        "rate": 0.85
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "rtw_clearance_accuracy",
+      "v1": {
+        "numerator": 18,
+        "denominator": 20,
+        "rate": 0.9
+      },
+      "v2": {
+        "numerator": 19,
+        "denominator": 20,
+        "rate": 0.95
+      },
+      "delta_rate": 0.04999999999999993
+    },
+    {
+      "metric": "unsupported_inference_case_count",
+      "v1": {
+        "case_count": 13,
+        "field_occurrence_count": 20,
+        "by_field": {
+          "experience.domain_specific": 11,
+          "rtw.citizenship": 1,
+          "rtw.clearance": 1,
+          "rtw.residency": 3,
+          "rtw.work_authorization_wording": 1,
+          "seniority": 3
+        }
+      },
+      "v2": {
+        "case_count": 12,
+        "field_occurrence_count": 16,
+        "by_field": {
+          "experience.domain_specific": 9,
+          "rtw.citizenship": 1,
+          "rtw.residency": 3,
+          "rtw.work_authorization_wording": 1,
+          "seniority": 2
+        }
+      },
+      "delta_case_count": -1,
+      "delta_field_occurrence_count": -4
+    },
+    {
+      "metric": "critical_field_omission_case_count",
+      "v1": {
+        "case_count": 4,
+        "field_occurrence_count": 5,
+        "by_field": {
+          "experience.domain_specific": 1,
+          "experience.requirement_level": 3,
+          "seniority": 1
+        }
+      },
+      "v2": {
+        "case_count": 6,
+        "field_occurrence_count": 6,
+        "by_field": {
+          "experience.domain_specific": 1,
+          "experience.requirement_level": 4,
+          "seniority": 1
+        }
+      },
+      "delta_case_count": 2,
+      "delta_field_occurrence_count": 1
+    }
+  ],
+  "v1_field_errors": {
+    "unsupported_inference": {
+      "case_count": 13,
+      "field_occurrence_count": 20,
+      "by_field": {
+        "experience.domain_specific": 11,
+        "rtw.citizenship": 1,
+        "rtw.clearance": 1,
+        "rtw.residency": 3,
+        "rtw.work_authorization_wording": 1,
+        "seniority": 3
+      }
+    },
+    "critical_field_omission": {
+      "case_count": 4,
+      "field_occurrence_count": 5,
+      "by_field": {
+        "experience.domain_specific": 1,
+        "experience.requirement_level": 3,
+        "seniority": 1
+      }
+    }
+  },
+  "v2_field_errors": {
+    "unsupported_inference": {
+      "case_count": 12,
+      "field_occurrence_count": 16,
+      "by_field": {
+        "experience.domain_specific": 9,
+        "rtw.citizenship": 1,
+        "rtw.residency": 3,
+        "rtw.work_authorization_wording": 1,
+        "seniority": 2
+      }
+    },
+    "critical_field_omission": {
+      "case_count": 6,
+      "field_occurrence_count": 6,
+      "by_field": {
+        "experience.domain_specific": 1,
+        "experience.requirement_level": 4,
+        "seniority": 1
+      }
+    }
+  }
+}

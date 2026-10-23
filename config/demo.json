@@ -1,0 +1,14 @@
+{
+  "provider": "openai",
+  "api_endpoint": "https://api.openai.com/v1/responses",
+  "model_id": null,
+  "api_key_env": "OPENAI_API_KEY",
+  "reasoning": {
+    "effort": "low"
+  },
+  "model_parameters": {
+    "max_output_tokens": 1800,
+    "store": false
+  },
+  "llm_output_schema_path": "schemas/llm_output.schema.json"
+}

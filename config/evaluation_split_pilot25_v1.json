@@ -1,0 +1,59 @@
+{
+  "split_version": "pilot25-split-v1",
+  "dataset_version": "eval-set-pilot25-v1",
+  "method": "deterministic_manual_balance_preserving_the_maximum_five_prior_holdout_members",
+  "policy": {
+    "prompt_v1_baseline": "run all 25 cases",
+    "prompt_v2_design": "development case-level errors only",
+    "holdout_visibility": "aggregate metrics only until prompt v2 is frozen"
+  },
+  "development": {
+    "count": 20,
+    "eval_ids": [
+      "eval-v1-002",
+      "eval-v1-005",
+      "eval-v1-006",
+      "eval-v1-007",
+      "eval-v1-008",
+      "eval-v1-009",
+      "eval-v1-010",
+      "eval-v1-011",
+      "eval-v1-013",
+      "eval-v1-014",
+      "eval-v1-015",
+      "eval-v1-016",
+      "eval-v1-017",
+      "eval-v1-018",
+      "eval-v1-019",
+      "eval-v1-020",
+      "eval-v1-021",
+      "eval-v1-022",
+      "eval-v1-024",
+      "eval-v1-025"
+    ],
+    "gold_recommendation_distribution": {
+      "apply": 1,
+      "hold": 1,
+      "priority": 7,
+      "skip": 8,
+      "stretch": 3
+    }
+  },
+  "holdout": {
+    "count": 5,
+    "eval_ids": [
+      "eval-v1-001",
+      "eval-v1-003",
+      "eval-v1-004",
+      "eval-v1-012",
+      "eval-v1-023"
+    ],
+    "gold_recommendation_distribution": {
+      "apply": 1,
+      "ask_hr": 1,
+      "priority": 1,
+      "skip": 1,
+      "stretch": 1
+    }
+  }
+}

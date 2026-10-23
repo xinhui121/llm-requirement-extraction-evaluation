@@ -1,0 +1,12 @@
+{
+  "fixed_case_count": 9,
+  "fixed_field_count": 9,
+  "v1_correct_case_regression_count": 2,
+  "regressed_field_count": 5,
+  "new_error_categories": {
+    "domain_specific": 2,
+    "essential_vs_desirable": 2,
+    "negation": 2,
+    "seniority": 1
+  }
+}

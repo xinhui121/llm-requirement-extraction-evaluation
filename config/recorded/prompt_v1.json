@@ -1,0 +1,23 @@
+{
+  "experiment_version": "llm-job-evaluation-pilot25-v1",
+  "experiment_enabled": true,
+  "production_integration": false,
+  "live_provider_invocation_enabled": true,
+  "provider": "openai",
+  "api_endpoint": "https://api.openai.com/v1/responses",
+  "model_id": "gpt-5.6-terra",
+  "api_key_env": "LLM_JOB_EVAL_API_KEY",
+  "reasoning": {
+    "effort": "low"
+  },
+  "model_parameters": {
+    "max_output_tokens": 1800,
+    "store": false
+  },
+  "prompt_path": "prompts/v1.txt",
+  "llm_output_schema_path": "schemas/llm_output.schema.json",
+  "frozen_eval_set_path": "data/eval_set_pilot25_v1.jsonl",
+  "frozen_manifest_path": "data/eval_set_pilot25_v1.manifest.json",
+  "split_path": "data/evaluation_split_pilot25_v1.json",
+  "output_root": "runs"
+}

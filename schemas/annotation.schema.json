@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "llm_job_evaluation/annotation.schema.json",
+  "title": "Human-labelled job evaluation record v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["eval_id", "company", "role", "full_jd_text", "source", "historical_tracker_decision", "selected_reason", "case_types", "jd_status", "evaluation_eligible", "adapter_context", "proposed_gold", "gold", "annotation_status", "annotation_notes"],
+  "properties": {
+    "eval_id": {"type": "string", "pattern": "^eval-v1-[0-9]{3}$"},
+    "company": {"type": "string", "minLength": 1},
+    "role": {"type": "string", "minLength": 1},
+    "full_jd_text": {"type": ["string", "null"]},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "reference"],
+      "properties": {
+        "kind": {"enum": ["user_provided_docx", "historical_tracker_record"]},
+        "reference": {"type": "string", "minLength": 1},
+        "selector": {"type": ["string", "null"]}
+      }
+    },
+    "historical_tracker_decision": {"enum": ["priority", "apply", "stretch", "ask_hr", "hold", "skip", "unknown"]},
+    "selected_reason": {"type": "string", "minLength": 1},
+    "case_types": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1, "uniqueItems": true},
+    "jd_status": {"enum": ["complete_user_provided_archive", "complete_recovered_exact_source", "missing_full_jd"]},
+    "evaluation_eligible": {"type": "boolean"},
+    "adapter_context": {"type": "object"},
+    "proposed_gold": {"$ref": "#/$defs/goldLabel"},
+    "gold": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/goldLabel"}]},
+    "annotation_status": {"enum": ["pending_human_confirmation", "human_confirmed"]},
+    "annotation_notes": {"type": "string"}
+  },
+  "$defs": {
+    "goldLabel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["experience", "skills_required", "skills_preferred", "rtw", "seniority", "hard_blockers", "final_recommendation"],
+      "properties": {
+        "experience": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["min_years", "max_years", "requirement_level", "domain_specific", "domain", "responsibility_scope"],
+          "properties": {
+            "min_years": {"type": ["number", "null"], "minimum": 0},
+            "max_years": {"type": ["number", "null"], "minimum": 0},
+            "requirement_level": {"enum": ["essential", "desirable", "unknown", "none"]},
+            "domain_specific": {"type": "boolean"},
+            "domain": {"type": ["string", "null"], "maxLength": 160},
+            "responsibility_scope": {"enum": ["entry_level", "individual_contributor", "independent_ownership", "management", "senior_specialist", "unknown"]}
+          }
+        },
+        "skills_required": {"type": "array", "items": {"type": "string", "minLength": 1, "maxLength": 120}, "uniqueItems": true},
+        "skills_preferred": {"type": "array", "items": {"type": "string", "minLength": 1, "maxLength": 120}, "uniqueItems": true},
+        "rtw": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["work_authorization_wording", "sponsorship_wording", "sponsorship_status", "permanent_or_indefinite_rtw_requirement", "citizenship", "residency", "clearance"],
+          "properties": {
+            "work_authorization_wording": {"type": "string", "minLength": 1, "maxLength": 600},
+            "sponsorship_wording": {"type": "string", "minLength": 1, "maxLength": 600},
+            "sponsorship_status": {"enum": ["no_sponsorship", "sponsorship_available", "conditional", "not stated", "unknown", "none"]},
+            "permanent_or_indefinite_rtw_requirement": {"enum": ["required", "not required", "not stated", "unknown", "none"]},
+            "citizenship": {"type": "string", "minLength": 1, "maxLength": 240},
+            "residency": {"type": "string", "minLength": 1, "maxLength": 240},
+            "clearance": {"type": "string", "minLength": 1, "maxLength": 240}
+          }
+        },
+        "seniority": {"enum": ["graduate", "entry", "junior", "mid", "senior", "unknown"]},
+        "hard_blockers": {"type": "array", "items": {"type": "string", "minLength": 1, "maxLength": 180}, "uniqueItems": true},
+        "final_recommendation": {"enum": ["priority", "apply", "stretch", "ask_hr", "hold", "skip"]}
+      }
+    }
+  }
+}

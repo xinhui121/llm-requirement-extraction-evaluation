@@ -1,0 +1,149 @@
+{
+  "case_count": 20,
+  "structured_output": {
+    "schema_valid_count": 20,
+    "schema_validity_rate": 1.0
+  },
+  "requirement_extraction": {
+    "experience_year_exact_match": 1.0,
+    "experience_year_compatible_match": 1.0,
+    "essential_vs_desirable_accuracy": 0.85,
+    "domain_specific_accuracy": 0.4,
+    "seniority_accuracy": 0.7,
+    "rtw_field_accuracy": {
+      "work_authorization_wording": 0.8,
+      "sponsorship_wording": 0.75,
+      "sponsorship_status": 0.95,
+      "permanent_or_indefinite_rtw_requirement": 1.0,
+      "citizenship": 0.9,
+      "residency": 0.85,
+      "clearance": 0.9
+    },
+    "rtw_all_fields_exact_match": 0.7,
+    "sponsorship_status_accuracy": 0.95
+  },
+  "eligibility_critical": {
+    "rtw_blocker_recall": 1.0,
+    "hard_blocker_recall": 0.7777777777777778,
+    "hard_blocker_precision": 0.5384615384615384
+  },
+  "final_system_output": {
+    "exact_recommendation_accuracy": 0.3,
+    "confusion_matrix": {
+      "priority": {
+        "priority": 0,
+        "apply": 0,
+        "stretch": 0,
+        "ask_hr": 1,
+        "hold": 3,
+        "skip": 3
+      },
+      "apply": {
+        "priority": 0,
+        "apply": 0,
+        "stretch": 0,
+        "ask_hr": 0,
+        "hold": 1,
+        "skip": 0
+      },
+      "stretch": {
+        "priority": 0,
+        "apply": 0,
+        "stretch": 0,
+        "ask_hr": 0,
+        "hold": 0,
+        "skip": 3
+      },
+      "ask_hr": {
+        "priority": 0,
+        "apply": 0,
+        "stretch": 0,
+        "ask_hr": 0,
+        "hold": 0,
+        "skip": 0
+      },
+      "hold": {
+        "priority": 0,
+        "apply": 0,
+        "stretch": 0,
+        "ask_hr": 0,
+        "hold": 0,
+        "skip": 1
+      },
+      "skip": {
+        "priority": 0,
+        "apply": 0,
+        "stretch": 0,
+        "ask_hr": 0,
+        "hold": 2,
+        "skip": 6
+      }
+    },
+    "false_skip_count": 6,
+    "false_skip_rate": 0.5454545454545454,
+    "false_actionable_count": 0,
+    "false_actionable_rate": 0.0
+  },
+  "numerator_denominator": {
+    "schema_validity": {
+      "numerator": 20,
+      "denominator": 20,
+      "rate": 1.0
+    },
+    "experience_year_exact_match": {
+      "numerator": 20,
+      "denominator": 20,
+      "rate": 1.0
+    },
+    "experience_year_compatible_match": {
+      "numerator": 20,
+      "denominator": 20,
+      "rate": 1.0
+    },
+    "essential_vs_desirable_accuracy": {
+      "numerator": 17,
+      "denominator": 20,
+      "rate": 0.85
+    },
+    "domain_specific_accuracy": {
+      "numerator": 8,
+      "denominator": 20,
+      "rate": 0.4
+    },
+    "seniority_accuracy": {
+      "numerator": 14,
+      "denominator": 20,
+      "rate": 0.7
+    },
+    "rtw_blocker_recall": {
+      "numerator": 1,
+      "denominator": 1,
+      "rate": 1.0
+    },
+    "hard_blocker_precision": {
+      "numerator": 7,
+      "denominator": 13,
+      "rate": 0.5384615384615384
+    },
+    "hard_blocker_recall": {
+      "numerator": 7,
+      "denominator": 9,
+      "rate": 0.7777777777777778
+    },
+    "exact_final_recommendation_accuracy": {
+      "numerator": 6,
+      "denominator": 20,
+      "rate": 0.3
+    },
+    "false_actionable": {
+      "numerator": 0,
+      "denominator": 9,
+      "rate": 0.0
+    },
+    "false_skip": {
+      "numerator": 6,
+      "denominator": 11,
+      "rate": 0.5454545454545454
+    }
+  }
+}

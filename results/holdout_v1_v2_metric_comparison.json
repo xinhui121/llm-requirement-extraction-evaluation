@@ -1,0 +1,258 @@
+{
+  "rows": [
+    {
+      "metric": "schema_validity",
+      "v1": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "v2": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "experience_year_exact_match",
+      "v1": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "v2": {
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "delta_rate": -0.19999999999999996
+    },
+    {
+      "metric": "experience_year_compatible_match",
+      "v1": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "v2": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "essential_vs_desirable_accuracy",
+      "v1": {
+        "numerator": 3,
+        "denominator": 5,
+        "rate": 0.6
+      },
+      "v2": {
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "delta_rate": 0.20000000000000007
+    },
+    {
+      "metric": "domain_specific_accuracy",
+      "v1": {
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "v2": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "delta_rate": 0.19999999999999996
+    },
+    {
+      "metric": "seniority_accuracy",
+      "v1": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "v2": {
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "delta_rate": -0.19999999999999996
+    },
+    {
+      "metric": "rtw_work_authorization_wording_accuracy",
+      "v1": {
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "v2": {
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "rtw_sponsorship_wording_accuracy",
+      "v1": {
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "v2": {
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "rtw_sponsorship_status_accuracy",
+      "v1": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "v2": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "rtw_permanent_or_indefinite_rtw_requirement_accuracy",
+      "v1": {
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "v2": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "delta_rate": 0.19999999999999996
+    },
+    {
+      "metric": "rtw_citizenship_accuracy",
+      "v1": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "v2": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "rtw_residency_accuracy",
+      "v1": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "v2": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "rtw_clearance_accuracy",
+      "v1": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "v2": {
+        "numerator": 5,
+        "denominator": 5,
+        "rate": 1.0
+      },
+      "delta_rate": 0.0
+    },
+    {
+      "metric": "unsupported_inference_case_count",
+      "v1": {
+        "case_count": 2,
+        "field_occurrence_count": 2,
+        "by_field": {
+          "experience.domain_specific": 1,
+          "experience.requirement_level": 1
+        }
+      },
+      "v2": {
+        "case_count": 1,
+        "field_occurrence_count": 1,
+        "by_field": {
+          "experience.requirement_level": 1
+        }
+      },
+      "delta_case_count": -1,
+      "delta_field_occurrence_count": -1
+    },
+    {
+      "metric": "critical_field_omission_case_count",
+      "v1": {
+        "case_count": 1,
+        "field_occurrence_count": 1,
+        "by_field": {
+          "experience.requirement_level": 1
+        }
+      },
+      "v2": {
+        "case_count": 1,
+        "field_occurrence_count": 1,
+        "by_field": {
+          "seniority": 1
+        }
+      },
+      "delta_case_count": 0,
+      "delta_field_occurrence_count": 0
+    }
+  ],
+  "v1_field_errors": {
+    "unsupported_inference": {
+      "case_count": 2,
+      "field_occurrence_count": 2,
+      "by_field": {
+        "experience.domain_specific": 1,
+        "experience.requirement_level": 1
+      }
+    },
+    "critical_field_omission": {
+      "case_count": 1,
+      "field_occurrence_count": 1,
+      "by_field": {
+        "experience.requirement_level": 1
+      }
+    }
+  },
+  "v2_field_errors": {
+    "unsupported_inference": {
+      "case_count": 1,
+      "field_occurrence_count": 1,
+      "by_field": {
+        "experience.requirement_level": 1
+      }
+    },
+    "critical_field_omission": {
+      "case_count": 1,
+      "field_occurrence_count": 1,
+      "by_field": {
+        "seniority": 1
+      }
+    }
+  }
+}

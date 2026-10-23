@@ -1,0 +1,32 @@
+{
+  "experiment": "Frozen 25-case requirement extraction pilot",
+  "record_count": 25,
+  "development_count": 20,
+  "holdout_count": 5,
+  "annotation_method": "blind_independent_human_review",
+  "reviewer_count": 1,
+  "dataset_sha256": "c4bad1f2d87c0a7ef3ee92860aac06b4e72ccf780f8a11f34cf7ed34c78a7495",
+  "split_sha256": "a0c9b1dd7412920d650420d4d6787344bbd44209182a3f9f41abe191ebf40ff6",
+  "llm_output_schema_sha256": "492c8d4a1c6c38fdc5fa210a2592548c5016967523f3bf722aad2c4b520e9212",
+  "prompts": {
+    "v1_sha256": "90b4133614bbaa56f98970d3e314afe571b01add00245c8bec54cc560706def1",
+    "v2_sha256": "084b428878849ae8cd02657f9915078c821b1c4e636810f0ec037b9f94b56b22",
+    "v2_frozen_at": "2026-09-19T05:17:31Z"
+  },
+  "recorded_configuration": {
+    "provider": "openai",
+    "api": "responses",
+    "model_id": "gpt-5.6-terra",
+    "reasoning_effort": "low",
+    "max_output_tokens": 1800,
+    "tools": "none",
+    "store": false
+  },
+  "recorded_runs": {
+    "v1": "prompt-v1-pilot25-20260919T045221Z-fe28f2d2",
+    "v2": "prompt-v2-pilot25-20260919T052427Z-c9da93e1"
+  },
+  "public_reproducibility_scope": "Public code can score supplied predictions and run synthetic examples. The original JD corpus, reviewer identifiers, candidate snapshot, tracker policy and case-level results are excluded; this public package alone cannot rerun the original benchmark or downstream gate.",
+  "model_availability": "The historical model identifier is recorded verbatim and is not a guarantee of current API availability.",
+  "holdout_policy": "Prompt v2 design used development case-level errors only; holdout aggregate comparison followed prompt freeze."
+}

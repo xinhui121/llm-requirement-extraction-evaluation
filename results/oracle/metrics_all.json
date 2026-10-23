@@ -1,0 +1,68 @@
+{
+  "case_count": 25,
+  "exact_recommendation_accuracy": {
+    "numerator": 10,
+    "denominator": 25,
+    "rate": 0.4
+  },
+  "false_actionable": {
+    "numerator": 0,
+    "denominator": 10,
+    "rate": 0.0
+  },
+  "false_skip": {
+    "numerator": 2,
+    "denominator": 14,
+    "rate": 0.14285714285714285
+  },
+  "confusion_matrix": {
+    "priority": {
+      "priority": 1,
+      "apply": 0,
+      "stretch": 1,
+      "ask_hr": 1,
+      "hold": 5,
+      "skip": 0
+    },
+    "apply": {
+      "priority": 0,
+      "apply": 1,
+      "stretch": 0,
+      "ask_hr": 0,
+      "hold": 1,
+      "skip": 0
+    },
+    "stretch": {
+      "priority": 0,
+      "apply": 0,
+      "stretch": 0,
+      "ask_hr": 0,
+      "hold": 2,
+      "skip": 2
+    },
+    "ask_hr": {
+      "priority": 0,
+      "apply": 0,
+      "stretch": 0,
+      "ask_hr": 0,
+      "hold": 1,
+      "skip": 0
+    },
+    "hold": {
+      "priority": 0,
+      "apply": 0,
+      "stretch": 0,
+      "ask_hr": 0,
+      "hold": 1,
+      "skip": 0
+    },
+    "skip": {
+      "priority": 0,
+      "apply": 0,
+      "stretch": 0,
+      "ask_hr": 0,
+      "hold": 2,
+      "skip": 7
+    }
+  }
+}
